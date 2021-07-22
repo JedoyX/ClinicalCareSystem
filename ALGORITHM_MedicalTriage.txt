@@ -1,0 +1,33 @@
+1. Check for possible Covid infection by checking body temp,
+respiratory symptoms, previous contact with covid, 
+family history of covid infection.
+
+2. Analyze results.
+	a. IF patient is assessed as covid negative proceed
+		to step 4.
+	b. ELSE IF patient is possibly infected by covid
+		go to step 3.
+3. IF patient is possibly infected by covid assess if;
+	a. patient needs hospital admission; 
+		complete viral screening test or if the clinical conditions are unstable, 
+		patient should be prioritized and be screened in the ED
+	b. if not, send patient home for quarantine.
+
+4. Check if patient is able to walk
+	a. if yes, label patient as MINOR and proceed to second triage
+	b. if no, proceed to step 5
+
+5. Check if patient's breathing is spontaneous.
+	a. if yes, proceed to step 6
+	b. if no, position airway.
+		1. if breathing occurs, label patient as IMMEDIATE
+		2. if no, label patient as EXPECTANT
+
+6. Check patient's respiratory rate
+	a. if >30, label as IMMEDIATE
+	b. if <30, proceed to step 7
+
+7. Check patient's radial pulse
+	a. if absent, labes as IMMEDIATE
+	b. if present, proceed to step 8.
+8. Check mental status, if patient doesn't obey commands, label as IMMEDIATE

@@ -1,0 +1,25 @@
+BEGIN
+	NUMERIC temp, respiratoryRate, a
+	DISPLAY "Enter your checked temperature"
+	INPUT temp
+	
+	IF temp<37
+		patientID = Database.getPatientID(patientName);
+		DISPLAY "Can you walk?: PRESS 1 if YES, 0 if NO"
+		INPUT a
+			IF a==1
+				DISPLAY "You need minor treatment, Proceed to Doctor for second triage"
+			IF a==0
+				DISPLAY "Input respiratory rate given by nurse"
+
+				IF respiratoryRate>0
+				DISPLAY "YOU NEED IMMEDIATE TREATMENT"
+				ELSE
+				DISPLAY "Wait for doctor's Instructions"
+				ENDIF
+
+			ENDIF
+	ELSE
+		DISPLAY "ASK Doctor for Instructions, FOLLOW COVID PROTOCOLS"
+	ENDIF
+	END
