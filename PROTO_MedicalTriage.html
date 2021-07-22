@@ -1,0 +1,103 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Medical Triage </title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style>
+
+      .form-container {
+    top: 15vh;
+    background: lightblue;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+    </style>
+    </head>
+
+    <body>
+      <section class="container-fluid">
+          <section class="row justify-content-center">
+
+              <section>
+
+                <form class="form-container">
+                    <div class="mb-3">
+                      <label for="name" class="form-label"> FULL NAME </label>
+                      <input type="name" class="form-control" id="name" aria-describedby="name">
+                      <div id="tname" class="form-text"></div>
+                    </div>
+
+                    <div>
+
+                      <label for="birthday"> Birthday:</label>
+                      <input type="date" id="birthday" name="birthday"> 
+                      
+                      <select class="custom-select">
+                        <option selected> Sex </option>
+                        <option value="1"> Male </option>
+                        <option value="2"> Female </option> 
+                      </select> 
+
+                      <select class="custom-select">
+                        <option selected> Marital Status </option>
+                        <option value="1"> Single </option>
+                        <option value="2"> Married </option> 
+                        <option value="3"> Divorced </option> 
+                        <option value="4"> Widowed </option> 
+                      </select> 
+
+                    </div> <br>
+
+                      <div class="mb-3">
+                        <label for="address" class="form-label"> ADDRESS </label>
+                        <input type="address" class="form-control" id="address" aria-describedby="address">
+                        <div id="address" class="form-text"></div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="eaddress" class="form-label"> CONTACT INFORMATION </label>
+                        <input type="eaddress" class="form-control" id="eaddress" aria-describedby="eaddress">
+                        <div id="address" class="form-text"></div>
+                        <div id="assessment" class="form-text"> Format: Email / Phone Number
+                      </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1"> COVID EXPOSURE INFORMATION </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <div id="assessment" class="form-text"> State above if you have any covid encounters (where, when, who).
+                          State briefly your symptoms (if you have any).
+                        </div>
+                      </div>
+                      </div> <br>
+                    
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1"> I am COVID FREE (Verified by a Nurse) </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1"> Patient's Status Assessment </label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <div id="assessment" class="form-text"> Patient's medical history, current medical status etc. </div>
+                    </div>
+                  </div> <br>
+
+                  <select class="custom-select">
+                    <option selected> Patient's preference for admission</option>
+                    <option value="1"> Out-Patient </option>
+                    <option value="2"> Hospital Admission </option> 
+                  </select> <br> <br>
+
+                  <button type="submit"><a href="submit.html">Submit</a></button>
+
+        
+                  </form>
+              </section>   
+          </section>
+      </section>
+    </body>
+</html>
